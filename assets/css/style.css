@@ -1,0 +1,142 @@
+/* Schrift: 'Cormorant Garamond'
+Farben: rgb(233, 233, 224), #333 */
+
+@font-face {
+    font-family: 'CormorantGaramond-Regular';
+    src: url("../fonts/CormorantGaramond-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'CoromantGaramond-Bold';
+    src: url("../fonts/CormorantGaramond-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'CoromantGaramond-Italic';
+    src: url("../fonts/CormorantGaramond-Italic.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    background-color:  rgb(233, 233, 224);
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1%;
+}
+
+h1::first-letter {
+    font-size: 4rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: black 2px double;
+    border-bottom: black 2px double;
+    margin-left:4%;
+    margin-right: 4%;
+    margin: 1% 4% 1% 4%;
+    padding: 0.3rem 0
+}
+
+ul li{
+    list-style: none;
+}
+
+main{
+    display: flex;
+}
+
+.kitchen{
+    display:grid;
+    margin-left: 4%;
+    width: 74%;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: min-content 15vh 29vh ;
+    gap:1.2%
+}
+
+.burning{
+    grid-column: 1/4;
+    padding: 1% 0 2% 0;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.image{
+    grid-column: 3;
+    grid-row: 2/4 ;
+}
+
+.image img{
+    width:100%
+}
+
+aside{
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: min-content 1fr 1fr 1fr;
+    margin-right: 4%;
+    margin-left: 2.4%;
+}
+
+aside h4{
+    text-align: center;
+    padding:5% 0 7% 0;
+}
+
+.yourAdd{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: black 2px double;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 8%;
+
+}
+
+.knives{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: black 2px double;
+    margin-bottom: 8%;
+}
+
+.knives h3{
+    font-size: 1.5rem;
+}
+
+.knives a{
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.ikea{
+    width: 150px;
+    height: 150px;
+    border: black 2px double;
+}
+
+aside img{
+    width: 100%;
+    filter: grayscale();
+    padding: 7%
+}
